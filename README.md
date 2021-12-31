@@ -1,12 +1,9 @@
-# fPKG_Maker_GUI
-A user friendly User Interface for fPKG Tools for PS4
-
-All fields need to be filled out before the patch will build properly, Meaning fill out the base game information first before trying to build the patch for the base game.
+#All fields need to be filled out before the patch will build properly, Meaning fill out the base game information first before trying to build the patch for the base game.
 
 # fPKG_Maker_GUI
 A user friendly User Interface for fPKG Tools for PS4
 
-I need to thank a few people before you read the steps
+# I need to thank a few people before you read the steps
 
 Thank you to CyB1K for his updated fPKG Tools, You can find his github here;
 https://github.com/CyB1K/PS4-Fake-PKG-Tools-3.87
@@ -18,7 +15,7 @@ Thank you to all the devs in the community!
 
 and thank you to LightningMods, Keep that homebrew scene going my dude. He runs an outstanding website you can find by searching for DKS.
 
-#####################################
+# ####################################
 
 There is still much to do to this tool
 
@@ -38,6 +35,6 @@ Generate gp4 files
 
 Build the games from the gp4 files.
 
-##### NOTE #####
+# #### NOTE ####
 
 All fields need to be filled out before the patch will build properly, Meaning fill out the base game information first before trying to build the patch for the base game.
