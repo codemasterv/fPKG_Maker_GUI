@@ -6,9 +6,11 @@ A user friendly User Interface for fPKG Tools for PS4
 # I need to thank a few people before you read the steps
 
 Thank you to CyB1K for his updated fPKG Tools, You can find his github here;
+
 https://github.com/CyB1K/PS4-Fake-PKG-Tools-3.87
 
 Thank you to hippie68 for his outstanding FTP Dump Linux Script. You can find his github here;
+
 https://github.com/hippie68/ftpdump
 
 Thank you to all the devs in the community!
