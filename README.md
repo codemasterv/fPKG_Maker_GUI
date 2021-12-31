@@ -1,133 +1,47 @@
-Bash script that dumps PS4 games via FTP connection over the network.
-Requires cURL, GNU Wget, and a PS4 FTP server that supports SELF decryption.
-For maximum speed, a gigabit cable connection is recommended (but Wi-Fi works, too).
+# All fields need to be filled out before the patch will build properly, Meaning fill out the base game information first before trying to build the patch for the base game.
 
-- No USB device required
-- No reboots and re-jailbreaking required (keep on dumping!)
-- Automatically replaces encrypted trophies
-- Can extract PKG and PFS image files
-- Supports the updated FTP payload at https://github.com/hippie68/ps4-ftp for best performance
-- Runs on Windows 10/11 via WSL, Linux, macOS, and anything that can use Bash
+Video of how it works
 
-Example command:
+https://www.youtube.com/watch?v=PorP6Z1LRq4
 
-    $ ./ftpdump 192.168.178.100
+# fPKG_Maker_GUI
+A user friendly User Interface for fPKG Tools for PS4
 
-General usage:
+I need to thank a few people before you read the steps
 
-    Usage: ftpdump [OPTIONS] HOSTNAME|IP_ADDRESS[:PORT] [OUTPUT_DIRECTORY]
-       Or: ftpdump --extract-pfs|--extract-pkg FILE [OUTPUT_DIRECTORY]
-    
-    1) Insert a disc and install the game. Optional: visit orbispatches.com
-       to download and install a game patch compatible with your firmware.
-    2) Start a PS4 FTP server (recommended: https://github.com/hippie68/ps4-ftp).
-    3) Press the PS button to leave the browser.
-    4) Run the game.
-    5) Run this script.
-    
-    To dump more installed games, repeat steps 4) and 5).
-    
-    Before running the script, make sure the game is completely installed.
-    Exit the script at any time by pressing CTRL-C.
-    
-    Options:
-      -a, --app          Dump app data.
-          --appdb        Dump app.db file and quit.
-          --beep         Beep when done.
-      -d, --dlc          Dump DLC data.
-          --debug        Print debug information.
-          --debug-pfs    Print debug information while extracting a PFS image file.
-          --dump PATH    Dump specified FTP file or directory and quit.
-                         Directories must end with a slash: "PATH/".
-          --extract-pfs PFS_IMAGE_FILE
-                         Extract a local PFS image file and quit.
-          --extract-pkg PKG_FILE
-                         Extract a local PKG file and quit.
-      -h, --help         Print usage information.
-      -k, --keystone     Dump original keystone.
-          --keep-trying  Infinitely keep trying to connect.
-          --no-decrypt   Do not tell the FTP server to enable SELF decryption.
-      -p, --patch        Dump patch data.
-      -r, --resume       Resume a previously interrupted download. In rare cases and
-                         with most FTP servers this can corrupt decrypted files.
-      -s, --sflash       Dump sflash0 file and quit.
-          --shutdown     Send the SHUTDOWN command and quit. If the FTP server is a
-                         payload that understands the command, it will stop running.
-          --use-pfs      Instead of downloading files separately, download and
-                         extract the PFS image file.
-      -v, --verbose      Print the FTP client/server dialog while downloading files.
+Thank you to CyB1K for his updated fPKG Tools, You can find his github here;
 
-By default, app, patch, and DLC data will be dumped. If no output directory is specified, the current directory will be used.
+https://github.com/CyB1K/PS4-Fake-PKG-Tools-3.87
 
-The dumps will take place in the following subdirectories:
+Thank you to hippie68 for his outstanding FTP Dump Linux Script. You can find his github here;
 
-    CUSAXXXXX-app
-    CUSAXXXXX-patch
-    CUSAXXXXX-dlc
-    CUSAXXXXX-keystone
+https://github.com/hippie68/ftpdump
 
-Optionally, IP address and port can be saved inside the script:
+Thank you to all the devs in the community!
 
-    ip=192.168.xxx.xxx
-    port=1337
+and thank you to LightningMods, Keep that homebrew scene going my dude. He runs an outstanding website you can find by searching for DKS.
 
-The PC speaker can be used to beep when a dump is complete:
+#####################################
 
-    beep=true
-    beep_time=60 (in seconds)
-    beep_interval=3 (in seconds)
+There is still much to do to this tool
 
-Depending on your computer and operating system, you might not have a PC speaker or must enable it first.
-By default, the script will only beep when dumping app/patch/DLC data, unless option --beep is specified.
+Some planned features are;
 
-### Troubleshooting
+//Add DLC Unlocker
 
-You can enable debug messages and/or see cURL's status messages by using options --debug and --verbose.
+//Add Terminal Window to see what is going on
 
-To compare the dumped directory with a reference dump (e.g. one created by a dumper payload), type:
+//Add dropdown menu to open all tools separate from this program
 
-    diff -r DUMP_DIRECTORY_1 DUMP_DIRECTORY_2
+//Add back port tools
 
-Please note that GoldHEN 2.0's FTP server uses a different decrypting method. Which means some .sprx files may differ due to stripped zeros, but they should be fully functional. This also means resuming decrypted files via option --resume will corrupt the files if you resume a partial dump done by a different FTP server with GoldHEN 2.0's FTP server and vice versa.
+//UI Polish
 
-If the script does not run as expected, please report bugs at https://github.com/hippie68/ftpdump/issues.
+I wanted to drop this before I go silent again for my next semester of school. This is an early build so expect some bugs but as it is right now it will;
 
-### For Windows users:
-The script runs on Windows 10/11 via WSL (https://docs.microsoft.com/windows/wsl/install).
+Dump the game via FTP and GoldenHen on port 2121
 
-After having installed WSL, for convenience you could: 
+Generate gp4 files 
 
-Download the ZIP file from GitHub: select the green "Code" button, then "Download ZIP". Extract the ZIP file.
-In the same folder that has the file "ftpdump", create a batch file named "ftpdump.bat" that has the following content:
+Build the games from the gp4 files.
 
-    wsl -e ./ftpdump %*
-
-Then, running the script is as simple as this (replace the IP address with your PS4's IP and FTP port):
-
-    ftpdump 192.168.178.100:1337
-
-Other options can be passed, too, for example:
-
-    ftpdump 192.168.178.100:1337 -p --dlc
-
-To save IP and port permanently, open and edit the file "ftpdump" with a text editor that supports Unix format (Notepad should do).
-
-If Wget is not installed by default, you can install it by opening a Windows command prompt and entering:
-
-    wsl -e sudo apt install wget
-
-### For macOS users:
-You need to install Wget, you might need to update your Bash version, and having GNU dd (part of coreutils) instead of the default macOS dd could improve the overall dumping speed slightly:
-
-    brew install bash coreutils wget
-
-GNU dd will majorly improve performance when extracting PFS images.
-
-### Known limitations
-
-Current PS4 FTP servers, which are based on the same code, have some limitations that affect the script's performance:
-- Downloading different SELF files in parallel can corrupt SELF decryption, effectively making downloading in parallel a no-go.
-- Cancelling the download of huge files (which the script employs to speed things up) won't stop the server from sending the rest of the file. The result is reduced network throughput (plus in extreme cases a PS4 performance decrease). Currently this can be worked around if the FTP server supports the custom command KILL (which the script will then call).
-- When decryption is enabled, servers still report the encrypted file size, which can corrupt resuming.
-
-The updated FTP payload at https://github.com/hippie68/ps4-ftp fixes those issues. Using it is especially recommended if you plan on mass dumping in one session.
