@@ -1,4 +1,4 @@
-#All fields need to be filled out before the patch will build properly, Meaning fill out the base game information first before trying to build the patch for the base game.
+# All fields need to be filled out before the patch will build properly, Meaning fill out the base game information first before trying to build the patch for the base game.
 
 # fPKG_Maker_GUI
 A user friendly User Interface for fPKG Tools for PS4
