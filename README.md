@@ -21,11 +21,11 @@ Thank you to all the devs in the community!
 
 and thank you to LightningMods, Keep that homebrew scene going my dude. He runs an outstanding website you can find by searching for DKS.
 
-#####################################
+# ####################################
 
 There is still much to do to this tool
 
-Some planned features are;
+# Some planned features are;
 
 //Add DLC Unlocker
 
@@ -36,6 +36,10 @@ Some planned features are;
 //Add back port tools
 
 //UI Polish
+
+# ####################################
+
+
 
 I wanted to drop this before I go silent again for my next semester of school. This is an early build so expect some bugs but as it is right now it will;
 
