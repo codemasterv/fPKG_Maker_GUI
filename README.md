@@ -22,11 +22,15 @@ There is still much to do to this tool
 Some planned features are;
 
 //Add DLC Unlocker
-//Add Terminal Window to see what is going on
-//Add dropdown menu to open all tools separate from this program
-//Add back port tools
-//UI Polish
 
+//Add Terminal Window to see what is going on
+
+//Add dropdown menu to open all tools separate from this program
+
+//Add back port tools
+
+//UI Polish
+# ###################################
 I wanted to drop this before I go silent again for my next semester of school. This is an early build so expect some bugs but as it is right now it will;
 
 Dump the game via FTP and GoldenHen on port 2121
