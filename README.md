@@ -1,5 +1,7 @@
 # All fields need to be filled out before the patch will build properly, Meaning fill out the base game information first before trying to build the patch for the base game.
 
+# If not insalled already, Be sure to install WSL2 Ubuntu 20.04 via the button in the bottom left corner of the program. This program requires that version!
+
 Video of how it works
 
 https://www.youtube.com/watch?v=PorP6Z1LRq4
