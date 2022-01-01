@@ -4,6 +4,16 @@
 
 # If not insalled already, Be sure to install WSL2 Ubuntu 20.04 via the button in the bottom left corner of the program. This program requires that version!
 
+if you do want to use the new ftpdump script all you have to do is replace the ftpdump file and add two spaces after the
+
+ip=
+
+and add the port you want to use.
+
+the program will make a copy of ftpdump named yourftpdump. it keeps the ftpdump persistent for updates to his script.
+
+# ###############
+
 Video of how it works
 
 https://www.youtube.com/watch?v=PorP6Z1LRq4
