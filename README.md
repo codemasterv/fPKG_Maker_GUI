@@ -21,21 +21,54 @@ This program requires that version!
 
 # Updating the ftpdump script from hippie68
 
-if you do want to use a new ftpdump script from hippie68, all you have to do is replace the ftpdump file in the same folder as the _fPKG_Maker_GUI.exe. Edit it and add two spaces after the
+latest version can be found here: https://github.com/hippie68/ftpdump
 
-_ip=
+if you do want to use a new ftpdump script from hippie68, all you have to do is replace the ftpdump file in the same folder as the _fPKG_Maker_GUI.exe. Edit the ftpdump file and add two spaces after the
+
+ip=
 
 and add the port you want to use. 
 
-_port=2121
+port=2121
 
-the program will make a copy of ftpdump named yourftpdump. it keeps the ftpdump persistent for updates to his script.
+the program will make a copy of ftpdump named yourftpdump. It keeps the ftpdump persistent and untouched.
 
-# ###############
+# Needed tools for WSL Ubuntu 20.04
 
-Video of how it works
+You need to install:
+____________________
+
+sudo apt-get update -y
+
+sudo apt-get upgrade -y
+
+sudo apt install -y dos2unix
+
+sudo apt install -y wget
+
+sudo apt install -y curl
+
+# Updating fPKG tools
+
+If fPKG tool do get an update from v3.87 you can just dump them right in the same folder as the _fPKG_Maker_GUI.exe and overwrite the old ones.
+
+# Video of how it works
 
 https://www.youtube.com/watch?v=6IIYGGSWvbg
+
+# Some planned features are:
+
+//Add DLC Unlocker
+
+//Add Terminal Window to see what is going on
+
+//Add dropdown menu to open all tools separate from this program
+
+//Add back port tools
+
+//UI Polish
+
+There is still much to do to this tool
 
 # fPKG_Maker_GUI
 A user friendly User Interface for fPKG Tools for PS4
@@ -54,27 +87,10 @@ Thank you to all the devs in the community!
 
 and thank you to LightningMods, Keep that homebrew scene going my dude. He runs an outstanding website you can find by searching for DKS.
 
-# ####################################
 
-There is still much to do to this tool
+# Note
 
-# Some planned features are;
-
-//Add DLC Unlocker
-
-//Add Terminal Window to see what is going on
-
-//Add dropdown menu to open all tools separate from this program
-
-//Add back port tools
-
-//UI Polish
-
-# ####################################
-
-
-
-I wanted to drop this before I go silent again for my next semester of school. This is an early build so expect some bugs but as it is right now it will;
+I wanted to drop this before I go silent again for my next semester of school. This is an early build so expect some bugs but as it is right now it works and will:
 
 Dump the game via FTP and GoldenHen on port 2121
 
