@@ -8,11 +8,15 @@
 
 # If not insalled already, Be sure to install WSL2 Ubuntu 20.04 via the button in the bottom left corner of the program. This program requires that version!
 
-if you do want to use the new ftpdump script all you have to do is replace the ftpdump file and add two spaces after the
+# Updating the ftpdump script from hippie68
+
+if you do want to use a new ftpdump script from hippie68, all you have to do is replace the ftpdump file in the same folder as the _fPKG_Maker_GUI.exe. Edit it and add two spaces after the
 
 ip=
 
-and add the port you want to use.
+and add the port you want to use. 
+
+port=2121
 
 the program will make a copy of ftpdump named yourftpdump. it keeps the ftpdump persistent for updates to his script.
 
@@ -20,7 +24,7 @@ the program will make a copy of ftpdump named yourftpdump. it keeps the ftpdump 
 
 Video of how it works
 
-https://www.youtube.com/watch?v=PorP6Z1LRq4
+https://www.youtube.com/watch?v=6IIYGGSWvbg
 
 # fPKG_Maker_GUI
 A user friendly User Interface for fPKG Tools for PS4
