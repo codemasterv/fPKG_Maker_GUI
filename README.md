@@ -1,3 +1,5 @@
+ # You need to be on Windows 10 or Preferably Windows 11 with its more simplified Windows Subsystem Linux. Windows 8.1, Windows 8 and Windows 7 will not work with this tool.
+
 ![alt text](https://github.com/codemasterv/fPKG_Maker_GUI/blob/master/Capture.PNG?raw=true)
 
 # All fields need to be filled out before the patch will build properly, Meaning fill out the base game information first before trying to build the patch for the base game.
