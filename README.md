@@ -53,7 +53,7 @@ sudo apt install -y curl
 If fPKG tool do get an update from v3.87 you can just dump them right in the same folder as the _fPKG_Maker_GUI.exe and overwrite the old ones.
 
 # Video of how it works
-
+[![Video program working](GifMaker_20220101134621819.gif)](https://www.youtube.com/watch?v=6IIYGGSWvbg)
 https://www.youtube.com/watch?v=6IIYGGSWvbg
 
 # Some planned features are:
