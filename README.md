@@ -1,22 +1,33 @@
  # You need to be on Windows 10 or Preferably Windows 11 with its more simplified Windows Subsystem Linux. 
- 
- # Windows 8.1, Windows 8 and Windows 7 will not work with this tool.
+  Windows 8.1, Windows 8 and Windows 7 will not work with this tool.
 
 ![alt text](https://github.com/codemasterv/fPKG_Maker_GUI/blob/master/Capture.PNG?raw=true)
 
-# All fields need to be filled out before the patch will build properly, Meaning fill out the base game information first before trying to build the patch for the base game.
+# All fields need to be filled out before the patch will build properly
 
-# If not insalled already, Be sure to install WSL2 Ubuntu 20.04 via the button in the bottom left corner of the program. This program requires that version!
+Meaning fill out the base game information first before trying to build the patch for the base game.
+
+# WSL Ubuntu 20.04 Required
+
+If not insalled already, Be sure to install WSL2 Ubuntu 20.04 via the button in the bottom left corner of the program 
+
+Or, 
+
+install from the Windows App Store. 
+
+https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71?SilentAuth=1&wa=wsignin1.0&activetab=pivot:overviewtab
+
+This program requires that version!
 
 # Updating the ftpdump script from hippie68
 
 if you do want to use a new ftpdump script from hippie68, all you have to do is replace the ftpdump file in the same folder as the _fPKG_Maker_GUI.exe. Edit it and add two spaces after the
 
-ip=
+_ip=
 
 and add the port you want to use. 
 
-port=2121
+_port=2121
 
 the program will make a copy of ftpdump named yourftpdump. it keeps the ftpdump persistent for updates to his script.
 
