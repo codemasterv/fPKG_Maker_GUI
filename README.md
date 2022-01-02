@@ -1,5 +1,9 @@
  # You need to be on Windows 10 or Preferably Windows 11 with its more simplified Windows Subsystem Linux. 
   Windows 8.1, Windows 8 and Windows 7 will not work with this tool.
+  
+  Game fPKG is placed in the CUSA folder after successful build
+  
+  Patch fPKG is placed in the CUSA folder after successful build
 
 ![alt text](https://github.com/codemasterv/fPKG_Maker_GUI/blob/master/Capture.PNG?raw=true)
 
