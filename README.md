@@ -64,7 +64,7 @@ https://www.youtube.com/watch?v=6IIYGGSWvbg
 
 //Add DLC Unlocker
 
-//Add Terminal Window to see what is going on
+** Added Terminal Window to program
 
 //Add dropdown menu to open all tools separate from this program
 
