@@ -4,13 +4,13 @@
 
 Currently this program has an issue with directory paths with spaces in the name. 
 
-Example: C:\MyComputer\user\my folder\fpkg_maker_gui\_fpkg_maker_gui.exe
+Example: C:\MyComputer\user\my folder\fpkg_maker_gui\fpkg_maker_gui.exe
 
 This is because it sees the space and thinks there are two folders and I need to modify the code to have trap exceptions for directories with spaces in their name.
 
 The fix for now is to move the fpkg_maker_gui folder to the root of the drive
 
-Example: E:\fpkg_maker_gui\_fpkg_maker_gui.exe
+Example: E:\fpkg_maker_gui\fpkg_maker_gui.exe
 
 This will allow it to run without issues.
 
