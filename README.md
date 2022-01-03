@@ -1,6 +1,6 @@
 # Know Issues being worked on
 
-# Please place this application on the root of your drive to avoid path errors.
+# Please place this application on the root of a drive to avoid path errors.
 
 Currently this program has an issue with directory paths with spaces in the name. 
 
