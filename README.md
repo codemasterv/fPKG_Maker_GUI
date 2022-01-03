@@ -1,3 +1,22 @@
+# Know Issues being worked on
+
+# Please place this application on the root of your drive to avoid path errors.
+
+Currently this program has an issue with directory paths with spaces in the name. 
+
+Example: C:\MyComputer\user\my folder\fpkg_maker_gui\_fpkg_maker_gui.exe
+
+This is because it sees the space and thinks there are two folders and I need to modify the code to have trap exceptions for directories with spaces in their name.
+
+The fix for now is to move the fpkg_maker_gui folder to the root of the drive
+
+Example: E:\fpkg_maker_gui\_fpkg_maker_gui.exe
+
+This will allow it to run without issues.
+
+I will fix this as soon as I can.
+
+______________________________________________________
  # You need to be on Windows 10 or Preferably Windows 11 with its more simplified Windows Subsystem Linux. 
   Windows 8.1, Windows 8 and Windows 7 will not work with this tool.
 
