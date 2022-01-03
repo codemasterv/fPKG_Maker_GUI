@@ -48,6 +48,8 @@ This program requires that version!
 
 # Updating the ftpdump script from hippie68
 
+Incase I miss one of his releases or forget to update the included version.
+
 latest version can be found here: https://github.com/hippie68/ftpdump
 
 if you do want to use a new ftpdump script from hippie68, all you have to do is replace the ftpdump file in the same folder as the _fPKG_Maker_GUI.exe. Edit the ftpdump file and add two spaces after the
