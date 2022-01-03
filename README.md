@@ -2,6 +2,14 @@
 
 # Please place this application on the root of a drive to avoid path errors.
 
+WSL 2 operates in a lightweight VM and does not have USB pass-through access. so you can not dump a game to the usb drive but you can use the tool to build game dumps that are on a usb drive. There are hacks availibe to provide access for WSL and USB over IP but I will not incorperate that as it is an annoying and drawn out process.
+
+So in short,
+
+You cant dump directly to USB but you can move your dumps to a USB and build on the USB.
+
+_________________________
+
 Currently this program has an issue with directory paths with spaces in the name. 
 
 Example: C:\MyComputer\user\my folder\fpkg_maker_gui\fpkg_maker_gui.exe
