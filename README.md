@@ -20,11 +20,19 @@ ______________________________________________________
  # You need to be on Windows 10 or Preferably Windows 11 with its more simplified Windows Subsystem Linux. 
   Windows 8.1, Windows 8 and Windows 7 will not work with this tool.
 
-![alt text](https://github.com/codemasterv/fPKG_Maker_GUI/blob/master/Capture.PNG?raw=true)
+![alt text](https://github.com/codemasterv/fPKG_Maker_GUI/blob/master/147890306-11e92413-b74c-4810-837f-64a4bbcfba0d.png?raw=true)
 
 # All fields need to be filled out before the patch will build properly
 
 Meaning fill out the base game information first before trying to build the patch for the base game.
+
+# Using DLC Unlocker
+
+To use this unlocker tool go to the playstation store and find your DLC. Copy the link in your link bar and paste it into the text box below the example link and click build.
+
+This will output the file to the directory in the log window
+
+![alt text](https://github.com/codemasterv/fPKG_Maker_GUI/blob/master/147890318-f5dab9c9-4501-487b-981d-2b5130ba292d.png?raw=true)
 
 # WSL Ubuntu 20.04 Required
 
