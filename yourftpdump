@@ -9,7 +9,7 @@
 # Optional default values: #####################################################
 
 # PS4's IP address
-ip=
+ip=192.168.1.51
 # PS4's FTP port (FTP payload: 1337)
 port=2121
 # Beep when done
