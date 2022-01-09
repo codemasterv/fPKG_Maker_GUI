@@ -28,7 +28,7 @@ ______________________________________________________
  # You need to be on Windows 10 or Preferably Windows 11 with its more simplified Windows Subsystem Linux. 
   Windows 8.1, Windows 8 and Windows 7 will not work with this tool.
 
-![alt text](https://github.com/codemasterv/fPKG_Maker_GUI/blob/master/147890306-11e92413-b74c-4810-837f-64a4bbcfba0d.png?raw=true)
+![alt text](https://github.com/codemasterv/fPKG_Maker_GUI/blob/master/Capture.PNG?raw=true)
 
 # All fields need to be filled out before the patch will build properly
 
