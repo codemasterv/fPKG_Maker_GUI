@@ -9,7 +9,7 @@
 # Optional default values: #####################################################
 
 # PS4's IP address
-ip=192.168.1.51
+ip=192.168.1.198
 # PS4's FTP port (FTP payload: 1337)
 port=2121
 # Beep when done
@@ -1075,10 +1075,10 @@ fi
 
 # For other dumps, get Title ID
 title_id=$(curl $curl_options --silent "$root/mnt/sandbox/" \
-  | grep -E " CUSA[0-9]{5}_")
+  | grep -E " [A-Z]{4}[0-9]{5}_")
 title_id=${title_id##* }
 title_id=${title_id%_*}
-if [[ $title_id != CUSA[0-9][0-9][0-9][0-9][0-9] ]]; then
+if [[ $title_id != [A-Z][A-Z][A-Z][A-Z][0-9][0-9][0-9][0-9][0-9] ]]; then
   echo "Could not retrieve Title ID. Is the game started?" >&2
   clean_exit 1
 fi
