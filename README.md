@@ -112,6 +112,8 @@ A user friendly User Interface for fPKG Tools for PS4
 
 I need to thank a few people before you read the steps
 
+DLC Unlcocker Script Written in python 3.5 by TheRadziu
+
 Thank you to CyB1K for his updated fPKG Tools, You can find his github here;
 
 https://github.com/CyB1K/PS4-Fake-PKG-Tools-3.87
