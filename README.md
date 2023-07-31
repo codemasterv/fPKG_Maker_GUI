@@ -1,3 +1,6 @@
+#Buy Me A Coffee
+https://ko-fi.com/codemasterv
+
 # Know Issues being worked on
 
 # Please place this application on the root of a drive to avoid path errors.
